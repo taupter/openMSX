@@ -12,7 +12,7 @@
 #include "small_buffer.hh"
 
 #include <png.h>
-#include <SDL.h>
+#include <SDL3/SDL.h>
 
 #include <array>
 #include <bit>

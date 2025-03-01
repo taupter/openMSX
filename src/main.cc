@@ -22,7 +22,7 @@
 #include <ctime>
 #include <cstdio>
 #include <cstdlib>
-#include <SDL.h>
+#include <SDL3/SDL.h>
 #ifdef _WIN32
 #include "win32-arggen.hh"
 #endif

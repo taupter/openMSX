@@ -3,7 +3,7 @@
 #include "strCat.hh"
 
 #include <tuple>
-#include <SDL.h>
+#include <SDL3/SDL.h>
 
 using namespace std::literals;
 

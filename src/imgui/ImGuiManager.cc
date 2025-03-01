@@ -53,7 +53,7 @@
 #include <imgui_internal.h>
 #include <CustomFont.ii> // icons for ImGuiFileDialog
 
-#include <SDL.h>
+#include <SDL3/SDL.h>
 
 #include <algorithm>
 

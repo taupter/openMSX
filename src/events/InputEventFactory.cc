@@ -5,7 +5,7 @@
 #include "StringOp.hh"
 #include "TclObject.hh"
 #include "one_of.hh"
-#include <SDL.h>
+#include <SDL3/SDL.h>
 
 namespace openmsx::InputEventFactory {
 

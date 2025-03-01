@@ -8,7 +8,7 @@
 #include "serialize_meta.hh"
 #include "unreachable.hh"
 #include "Math.hh"
-#include <SDL.h>
+#include <SDL3/SDL.h>
 #include <algorithm>
 
 namespace openmsx {

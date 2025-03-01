@@ -4,7 +4,7 @@
 #include "MemBuffer.hh"
 #include "InitException.hh"
 #include "narrow.hh"
-#include <SDL.h>
+#include <SDL3/SDL.h>
 #include <algorithm>
 #include <memory>
 #include <new>
