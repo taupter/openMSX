@@ -28,7 +28,7 @@
 #include "build-info.hh"
 
 #include <imgui.h>
-#include <imgui_impl_sdl2.h>
+#include <imgui_impl_sdl3.h>
 #include <imgui_impl_opengl3.h>
 
 #include <bit>
@@ -102,7 +102,7 @@ VisibleSurface::VisibleSurface(
 	}
 
 	// Setup ImGui Platform/Renderer backends
-	ImGui_ImplSDL2_InitForOpenGL(window.get(), glContext);
+	ImGui_ImplSDL3_InitForOpenGL(window.get(), glContext);
 	ImGui_ImplOpenGL3_Init(glsl_version);
 
 	// From the glew documentation:
@@ -158,7 +158,7 @@ VisibleSurface::~VisibleSurface()
 	renderSettings.getVSyncSetting().detach(vSyncObserver);
 
 	ImGui_ImplOpenGL3_Shutdown();
-	ImGui_ImplSDL2_Shutdown();
+	ImGui_ImplSDL3_Shutdown();
 
 	gl::context.reset();
 	SDL_GL_DeleteContext(glContext);
