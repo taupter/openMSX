@@ -108,7 +108,7 @@ void ImGuiCharacter::paint(MSXMotherBoard* motherBoard)
 		int vdpBgCol = vdp->getBackgroundColor() & 15;
 		int vdpFgBlink = vdp->getBlinkForegroundColor() & 15;
 		int vdpBgBlink = vdp->getBlinkBackgroundColor() & 15;
-		bool vdpBlink = vdp->getBlinkState();
+		bool vdpBlink = vdp->getBlinkState(0); // fast-blink is not implemented here
 		int vdpPatBase = vdp->getPatternTableBase() & ~(patMult(vdpMode) - 1);
 		int vdpColBase = vdp->getColorTableBase() & ~(colMult(vdpMode) - 1);
 		int vdpNamBase = vdp->getNameTableBase() & ~(namMult(vdpMode) - 1);
